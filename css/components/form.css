@@ -1,0 +1,175 @@
+.form-group {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+}
+
+.form-control {
+  background: #F2F7FF;
+  border-radius: 133px;
+  width: 272px;
+  height: 52px;
+  border: none;
+  padding: 0 21px;
+}
+
+.form-label {
+  margin-bottom: 7px;
+}
+
+.form-search:after {
+  content: "";
+  border: 7px solid #373F55;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom: none;
+  position: absolute;
+  right: 22px;
+  top: 55px;
+  z-index: 1;
+}
+.form-search .form-control {
+  margin-bottom: 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+}
+
+
+.form-subscribe {
+  margin-bottom: 58px;
+}
+
+.form-subscribe .form-group {
+  margin-bottom: 15px;
+}
+
+.form-subscribe .form-control {
+  width: 100%;
+}
+
+.form-subscribe .button {
+  margin-right: 65px;
+  width: 100%;
+
+}
+
+@media ( min-width: 640px) {
+  .form-subscribe .form-group {
+    width: 368px;
+    margin: 0;
+  }
+  
+  .form-subscribe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }  
+  
+  .form-subscribe .form-control {
+    width: 368px;
+  }
+  
+  .form-subscribe .button {
+    margin-left: 18px;
+    width: 206px;
+  }
+  
+  .form-search .form-control {
+    margin-bottom: 50px;
+  }  
+  
+}
+
+/* ----------------------------------------------------search-box----------------------------------------------------*/
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9); /* Black with a little bit see-through */
+}
+
+/* The content */
+.overlay-content {
+  position: relative;
+  top: 46%;
+  width: 80%;
+  text-align: center;
+  margin-top: 30px;
+  margin: auto;
+}
+
+/* Close button */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+  color: white;
+}
+
+.overlay .closebtn:hover {
+  color: #ccc;
+}
+
+/* Style the search field */
+.overlay input[type=text] {
+  padding: 23px;
+  font-size: 17px;
+  border: none;
+  float: left;
+  width: 80%;
+  background: white;
+}
+
+.overlay input[type=text]:hover {
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+.overlay button {
+  float: left;
+  width: 20%;
+  padding: 14px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.overlay button:hover {
+  background: #bbb;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-search:before {
+  content: "\f002";
+}

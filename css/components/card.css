@@ -1,0 +1,188 @@
+.card {
+  position: relative;
+}
+
+.card-image {
+  max-height: 229px;
+  margin: 0;
+  overflow: hidden;
+}
+
+.card-image .image {
+  border-radius: 30px 30px 0 0;
+}
+
+.card-icon-description {
+  margin: 0;
+  font-size: 13px;
+  color: #888EA0;
+}
+
+.card-cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.card-body {
+  padding: 29px 16px 13px 13px;
+  background: #fff;
+  border-radius: 0 0 30px 30px;
+
+}
+
+.card-body-top, .card-body-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card-body-top {
+margin-bottom: 20px;
+}
+
+.card-body-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card-populartours {
+  margin-bottom: 40px;
+  max-width: 258px;
+}
+
+.card-populartours .card-title, 
+.card-dailytours .card-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.card-populartours .card-description,
+.card-dailytours .card-description {
+  font-size: 16px;
+  line-height: 20px;
+  color: #464649;
+  margin-top: 0;
+}
+
+.card-populartours .card-body-bottom-description,
+.card-dailytours .card-body-bottom-description {
+  font-size: 13px;
+  line-height: 15px;
+  color: #888EA0;
+  margin-top: 0;
+}
+
+.card-populartours .card-price,
+.card-dailytours .card-price {
+  font-size: 30px;
+  color: #373F55;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+.card-dailytours {
+  margin-bottom: 22px;
+}
+
+.card-dailytours .card-body {
+  padding: 24px 20px 13px 15px;
+}
+
+.card-dailytours .card-image {
+max-height: 171px;
+}
+
+.card-review {
+  background: #fff;
+  border-radius: 35px;
+  max-width: 429px;
+  min-height: 188px;
+  margin: 0 18px;
+  padding: 22px;
+}
+
+.card-review .card-title {
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  margin-bottom: 0;
+}
+
+.card-review .card-title {
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  margin-bottom: 0;
+}
+
+.card-review .card-subtitle {
+  font-size: 13px;
+  line-height: 18px;
+  color: #888EA0;
+  margin: 0;
+}
+
+.card-review .card-image {
+  margin-right: 20px;
+}
+
+.card-review .card-description {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.card-review .card-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.card-review .list-card-icon {
+  margin-left: auto;
+}
+
+.card-review .list-card-icon > .list-item {
+  font-size: 9px;
+}
+
+.card-review .card-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.card-review .card-link {
+  font-size: 14px;
+  line-height: 20px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #0F2D47;
+}
+
+.card-review .card-image {
+  width: 50px;
+  height: 50px;
+}
+
+.card-review .image {
+  border-radius: 50%;
+}

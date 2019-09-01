@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <title>The North.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+  <body>
+
+    <div id="myOverlay" class="overlay">
+      <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
+      <div class="overlay-content">
+        <form action="action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa icon-search"></i></button>
+        </form>
+      </div>
+    </div>
+
+    <div class="wrapper">
+
+      <header class="header section-header">
+        <div class="container">
+          <section class="header-top">
+            <div class="header-top-start">
+              <ul class="list list-contacts">
+                <li class="list-item">
+                  <span class="list-icon icon-phone"></span>
+                  +47-124-82-232
+                </li>
+              </ul>
+            </div>
+            <div class="header-top-center">
+              <a class="logo" href="#">The North.</a>
+            </div>
+            <div class="header-top-end">
+              <span class="openBtn icon-search" onclick="openSearch()"></span>
+              <div class="dropdown-profile">
+                <ul class="list list-account">
+                  <li onclick="myFunctionProfile()" class="list-item dropbtn button-profile">
+                      <figure class="account-image">
+                        <img class="image" src="images/5.jpg" alt="image">
+                      </figure>
+                      <span class="account-name">Elena</span>
+                  </li>
+                </ul>
+                <div id="myDropdownProfile" class="dropdown-content">
+                  <a href="#home">My profile</a>
+                  <a href="#about">My tickets</a>
+                  <a href="#contact">Log out</a>
+                </div>
+              </div>                
+            </div>
+          </section>
+          <section class="header-bottom">
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">Home</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a class="nav-item is-active" href="#">Home</a>
+                <a class="nav-item" href="#">Search for tours</a>
+                <a class="nav-item" href="#">Popular tours</a>
+                <a class="nav-item" href="#">Daily tours</a>
+                <a class="nav-item" href="#">About us</a>
+                <a class="nav-item" href="#">Reviews</a>
+                <a class="nav-item" href="#">Contacts</a>
+              </div>
+            </div>
+            <nav class="nav">
+              <a class="nav-item is-active" href="#">Home</a>
+              <a class="nav-item" href="#">Search for tours</a>
+              <a class="nav-item" href="#">Popular tours</a>
+              <a class="nav-item" href="#">Daily tours</a>
+              <a class="nav-item" href="#">About us</a>
+              <a class="nav-item" href="#">Reviews</a>
+              <a class="nav-item" href="#">Contacts</a>
+            </nav>  
+          </section>   
+        </div>
+      </header>
+
+      <main class="main"> 
+        
+        <section class="section section-hero">
+
+          <figure class="section-background">
+            <img src="images/simon-migaj-561506-unsplash.jpg" alt="image">
+          </figure>
+  
+          <div class="container">
+            <section class="section-top">
+              <h1 class="section-title">Norway Excursions</h1>
+            </section>
+
+            <section class="section-middle">
+              <p class="section-description">We have years of experience. Whether you are traveling to Norway by plane, bus or cruise ship, 
+                our excursions are available and accessible for everyone.
+              </p>
+              <button class="button button-primary">View all tours</button>
+            </section>
+          </div>
+      
+        </section>
+
+        <section class="section section-search">
+          <div class="container">
+            <h2 class="section-title">Search for tours</h2>
+            <div class="grid">
+              <div class="grid-item width-1-1 width-1-2-sm width-1-4-md">
+                <div class="form-group form-search">
+                  <label class="form-label" for="exampleFormControlSelect1">Category</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>All</option>
+                    <option>Expensive</option>
+                    <option>Cheap</option>
+                  </select>
+                </div>              
+              </div>
+              <div class="grid-item width-1-1 width-1-2-sm width-1-4-md">
+                <div class="form-group form-search">
+                  <label class="form-label" for="Select1">Tag</label>
+                  <select class="form-control" id="Select1">
+                    <option>Nordfjord</option>
+                    <option>Sognefjord</option>
+                    <option>Oslofjord</option>
+                  </select>
+                </div>   
+              </div>
+              <div class="grid-item width-1-1 width-1-2-sm width-1-4-md">
+                <div class="form-group form-search">
+                  <label class="form-label" for="FormControlSelect1">Duration</label>
+                  <select class="form-control" id="FormControlSelect1">
+                    <option>1 day</option>
+                    <option>3 day</option>
+                    <option>7 day</option>
+                  </select>
+                </div>   
+              </div>
+              <div class="grid-item width-1-1 width-1-2-sm width-1-4-md">
+                <div class="form-group form-search">
+                  <label class="form-label" for="ControlSelect1">Price</label>
+                  <select class="form-control" id="ControlSelect1">
+                    <option>Less then 70€</option>
+                    <option>Less then 100€</option>
+                    <option>Less then 150€</option>
+                  </select>
+                </div>   
+              </div>
+            </div>
+            <button class="button button-primary">Find tours</button>            
+          </div>
+        </section>
+
+        <section class="section section-image">
+          <figure class="section-image">
+            <img src="images/mountains.jpg" alt="image">
+          </figure>  
+        </section>
+
+        <section class="section section-populartours">
+          <div class="container">
+            <h2 class="section-title">Popular tours</h2>
+
+            <div class="swiper-container">
+
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="card card-populartours">
+                    <figure class="card-image">
+                      <img class="image" src="images/northern-lights-and-a-snowmobile.jpg" alt="image">
+                    </figure>  
+                    <div class="card-body">
+                      <div class="card-body-top">
+                        <ul class="list list-card-icon">
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                        </ul>
+                        <p class="card-icon-description">125 Reviews</p>
+                      </div>
+                      <div class="card-body-middle">
+                        <h5 class="card-title">Northern Lights and Snowmobile riding</h5>
+                        <p class="card-description">Seeing the northern lights can be hard under the bright lights</p>
+                      </div>
+                      <div class="card-body-bottom">
+                        <p class="card-body-bottom-description">Duration - 12 hours</p>
+                        <p class="card-price">95€</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card card-populartours">
+                    <figure class="card-image">
+                      <img class="image" src="images/nathan-lemon-71056-unsplash.jpg" alt="image">
+                    </figure>  
+                    <div class="card-body">
+                      <div class="card-body-top">
+                        <ul class="list list-card-icon">
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                        </ul>
+                        <p class="card-icon-description">140 Reviews</p>
+                      </div>
+                      <div class="card-body-middle">
+                        <h5 class="card-title">Reindeer Feeding and Lasso Throwing</h5>
+                        <p class="card-description">Immerse yourself in Sami culture and feed a herd of 200</p>
+                      </div>
+                      <div class="card-body-bottom">
+                        <p class="card-body-bottom-description">Duration - 3 hours</p>
+                        <p class="card-price">60€</p>
+                      </div>
+                    </div>
+                  </div>          
+                </div>
+                <div class="swiper-slide">
+                  <div class="card card-populartours">
+                    <figure class="card-image">
+                      <img class="image" src="images/arvid-malde-526095-unsplash.jpg" alt="image">
+                    </figure>  
+                    <div class="card-body">
+                      <div class="card-body-top">
+                        <ul class="list list-card-icon">
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                        </ul>
+                        <p class="card-icon-description">97 Reviews</p>
+                      </div>
+                      <div class="card-body-middle">
+                        <h5 class="card-title">Self-Guided Norway roundtrip: Oslo</h5>
+                        <p class="card-description">Experience Norway, and see Scandinavian scenery on this</p>
+                      </div>
+                      <div class="card-body-bottom">
+                        <p class="card-body-bottom-description">Duration - 10 hours</p>
+                        <p class="card-price">80€</p>
+                      </div>
+                    </div>
+                  </div>              
+                </div>
+                <div class="swiper-slide">
+                  <div class="card card-populartours">
+                    <figure class="card-image">
+                      <img class="image" src="images/darkroomsg-263279-unsplash.jpg" alt="image">
+                    </figure>  
+                    <div class="card-body">
+                      <div class="card-body-top">
+                        <ul class="list list-card-icon">
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                        </ul>
+                        <p class="card-icon-description">84 Reviews</p>
+                      </div>
+                      <div class="card-body-middle">
+                        <h5 class="card-title">Drive a Husky Sled in Tromso</h5>
+                        <p class="card-description">Seeing the northern lights can be hard under the bright lights</p>
+                      </div>
+                      <div class="card-body-bottom">
+                        <p class="card-body-bottom-description">Duration - 3 hours</p>
+                        <p class="card-price">75€</p>
+                      </div>
+                    </div>
+                  </div>              
+                </div>
+              </div>
+                        
+            </div>
+
+            <button class="button button-primary">View all popular tours</button>
+          </div>  
+
+          <div class="swiper-button-prev">&lt;</div>
+          <div class="swiper-button-next">&gt;</div>
+
+        </section>
+
+        <section class="section section-dailytours">
+
+          <figure class="section-background">
+            <img src="images/img.jpg" alt="image">
+          </figure>  
+
+          <div class="container">
+            <h2 class="section-title">Daily tours</h2>
+            <div class="cards-wrapper">
+              <div class="grid grid-gap-md">
+                <div class="grid-item width-1-1 width-1-2-xs width-1-3-sm width-1-4-md">
+                  <div class="card card-dailytours">
+                    <figure class="card-image">
+                      <img class="image" src="images/reindeer-feeding-lasso-throwing-and-sami-culture-tour-including-lunch-in-troms-686668.jpg" alt="image">
+                    </figure>  
+                    <div class="card-body">
+                      <div class="card-body-top">
+                        <ul class="list list-card-icon">
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                        </ul>
+                        <p class="card-icon-description">160 Reviews</p>
+                      </div>
+                      <div class="card-body-middle">
+                        <h5 class="card-title">Reindeer Feeding and Lasso Throwing</h5>
+                      </div>
+                      <div class="card-body-bottom">
+                        <p class="card-body-bottom-description">Duration - 3 hours</p>
+                        <p class="card-price">55€</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item width-1-1 width-1-2-xs width-1-3-sm width-1-4-md">
+                  <div class="card card-dailytours">
+                    <figure class="card-image">
+                      <img class="image" src="images/linnea-friberg-472572-unsplash.jpg" alt="image">
+                    </figure>  
+                    <div class="card-body">
+                      <div class="card-body-top">
+                        <ul class="list list-card-icon">
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                        </ul>
+                        <p class="card-icon-description">65 Reviews</p>
+                      </div>
+                      <div class="card-body-middle">
+                        <h5 class="card-title">Lapland Lyngen Alps Snowmobile Safari</h5>
+                      </div>
+                      <div class="card-body-bottom">
+                        <p class="card-body-bottom-description">Duration - 2 hours</p>
+                        <p class="card-price">60€</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item width-1-1 width-1-2-xs width-1-3-sm width-1-4-md">
+                  <div class="card card-dailytours">
+                    <figure class="card-image">
+                      <img class="image" src="images/aurlandsfjord-1-2000x1200.jpg" alt="image">
+                    </figure>  
+                    <div class="card-body">
+                      <div class="card-body-top">
+                        <ul class="list list-card-icon">
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                        </ul>
+                        <p class="card-icon-description">145 Reviews</p>
+                      </div>
+                      <div class="card-body-middle">
+                        <h5 class="card-title">Breathtaking fjord cruise</h5>
+                      </div>
+                      <div class="card-body-bottom">
+                        <p class="card-body-bottom-description">Duration - 4 hours</p>
+                        <p class="card-price">70€</p>
+                      </div>
+                    </div>
+                  </div>    
+                </div>
+                <div class="grid-item width-1-1 width-1-2-xs width-1-3-sm width-1-4-md">
+                  <div class="card card-dailytours">
+                    <figure class="card-image">
+                      <img class="image" src="images/stock-arctic-sea-ice-2.jpg" alt="image">
+                    </figure>  
+                    <div class="card-body">
+                      <div class="card-body-top">
+                        <ul class="list list-card-icon">
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                        </ul>
+                        <p class="card-icon-description">75 Reviews</p>
+                      </div>
+                      <div class="card-body-middle">
+                        <h5 class="card-title">Arctic Sea and Lyngen Alps </h5>
+                      </div>
+                      <div class="card-body-bottom">
+                        <p class="card-body-bottom-description">Duration - 5 hours</p>
+                        <p class="card-price">90€</p>
+                      </div>
+                    </div>
+                  </div>    
+                </div>
+                <div class="grid-item width-1-1 width-1-2-xs width-1-3-sm width-1-4-md">
+                  <div class="card card-dailytours">
+                    <figure class="card-image">
+                      <img class="image" src="images/horfa_nordurljos_1800x851_f42cf99f-8135-41e3-bd70-f1dbcf6d7e44_1400x.jpg" alt="image">
+                    </figure>  
+                    <div class="card-body">
+                      <div class="card-body-top">
+                        <ul class="list list-card-icon">
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                        </ul>
+                        <p class="card-icon-description">75 Reviews</p>
+                      </div>
+                      <div class="card-body-middle">
+                        <h5 class="card-title">Aurora Hunt Northern Lights Tour</h5>
+                      </div>
+                      <div class="card-body-bottom">
+                        <p class="card-body-bottom-description">Duration - 6 hours</p>
+                        <p class="card-price">95€</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item width-1-1 width-1-2-xs width-1-3-sm width-1-4-md">
+                  <div class="card card-dailytours">
+                    <figure class="card-image">
+                      <img class="image" src="images/4df7002e42dafa0fdc6d0f78dbfbba67.jpg" alt="image">
+                    </figure>  
+                    <div class="card-body">
+                      <div class="card-body-top">
+                        <ul class="list list-card-icon">
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                        </ul>
+                        <p class="card-icon-description">102 Reviews</p>
+                      </div>
+                      <div class="card-body-middle">
+                        <h5 class="card-title">2-Hour Oslo Fjord Sightseeing Cruise</h5>
+                      </div>
+                      <div class="card-body-bottom">
+                        <p class="card-body-bottom-description">Duration - 2 hours</p>
+                        <p class="card-price">45€</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item width-1-1 width-1-2-xs width-1-3-sm width-1-4-md">
+                  <div class="card card-dailytours">
+                    <figure class="card-image">
+                      <img class="image" src="images/thomas-lipke-522518-unsplash.jpg" alt="image">
+                    </figure>  
+                    <div class="card-body">
+                      <div class="card-body-top">
+                        <ul class="list list-card-icon">
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                        </ul>
+                        <p class="card-icon-description">56 Reviews</p>
+                      </div>
+                      <div class="card-body-middle">
+                        <h5 class="card-title">Evening Husky Sled Ride</h5>
+                      </div>
+                      <div class="card-body-bottom">
+                        <p class="card-body-bottom-description">Duration - 2 hours</p>
+                        <p class="card-price">50€</p>
+                      </div>
+                    </div>
+                  </div>    
+                </div>
+                <div class="grid-item width-1-1 width-1-2-xs width-1-3-sm width-1-4-md">
+                  <div class="card card-dailytours">
+                    <figure class="card-image">
+                      <img class="image" src="images/northern-lights-explorer-3.jpg" alt="image">
+                    </figure>  
+                    <div class="card-body">
+                      <div class="card-body-top">
+                        <ul class="list list-card-icon">
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                        </ul>
+                        <p class="card-icon-description">125 Reviews</p>
+                      </div>
+                      <div class="card-body-middle">
+                        <h5 class="card-title">Small Group Northern Lights </h5>
+                      </div>
+                      <div class="card-body-bottom">
+                        <p class="card-body-bottom-description">Duration - 4 hours</p>
+                        <p class="card-price">80€</p>
+                      </div>
+                    </div>
+                  </div>    
+                </div>
+              </div>
+            </div>
+            <button class="button button-primary">View all daily tours</button>
+          </div>
+        </section>
+
+        <section class="section section-aboutus">
+          <div class="container">
+            <h2 class="section-title">Who we are?</h2>
+            <div class="grid grid-gap-lg">
+              <div class="grid-item width-1-1 width-1-2-md">
+                <section class="section-aboutus-left">
+                  <div class="grid grid-vertical-gap-md">
+                    <div class="grid-item width-1-2">
+                      <figure class="section-image">
+                        <img class="image border-radius-top-left" src="images/true-agency-804517-unsplash.jpg" alt="image">
+                      </figure>          
+                    </div>
+                    <div class="grid-item width-1-2">
+                      <figure class="section-image">
+                        <img class="image border-radius-top-right" src="images/toa-heftiba-644511-unsplash.jpg" alt="image">
+                      </figure>          
+                    </div>
+                    <div class="grid-item width-1-2">
+                      <figure class="section-image">
+                        <img class="image border-radius-bottom-left" src="images/brooke-cagle-609873-unsplash.jpg" alt="image">
+                      </figure>          
+                    </div>
+                    <div class="grid-item width-1-2">
+                      <figure class="section-image">
+                        <img class="image border-radius-bottom-right" src="images/linkedin-sales-navigator-402819-unsplash.jpg" alt="image">
+                      </figure>          
+                    </div>      
+                  </div>
+                </section>
+              </div>
+              <div class="grid-item width-1-1 width-1-2-md">
+                <section class="section-aboutus-right">
+                  <p class="section-description">Our company has years of experience in the world of tourism, providing excursions. We take care of our clients and all our staff 
+                    is the most qualified professionals. We try to make our clients happy and make each excursion unforgettable for them.   
+                  </p>
+                  <p class="section-description">We have the newest equipment everywhere you need it. We like animals and nature, that’s why our pets the happiest and the most beautiful.</p>
+                  <p class="section-description">Let’s travel with us. We will make your life brighter.</p>  
+                </section>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <section class="section section-reviews">
+          <h2 class="section-title">Reviews</h2>
+
+          <div class="swiper-container1">
+
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="card card-review">
+                    <div class="card-top">
+                      <figure class="card-image">
+                        <img class="image" src="images/5.jpg" alt="image">
+                      </figure>  
+                      <div class="card-title-wrapper">
+                        <h3 class="card-title">Elena Smitt</h3>
+                        <p class="card-subtitle">New York, NY</p>
+                      </div>
+                      <ul class="list list-card-icon">
+                        <li class="list-item icon-star-full"></li>
+                        <li class="list-item icon-star-full"></li>
+                        <li class="list-item icon-star-full"></li>
+                        <li class="list-item icon-star-full"></li>
+                        <li class="list-item icon-star-full"></li>
+                      </ul>
+                    </div>
+                    <div class="card-middle">
+                      <p class="card-description">It was the most wonderful time I’ve spent ever! My life has changed after these excursions! I like the North too much!</p>
+                    </div>
+                    <div class="card-bottom">
+                      <a class="card-link" href="#">View more</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card card-review">
+                      <div class="card-top">
+                        <figure class="card-image">
+                          <img class="image" src="images/autumn-goodman-242810-unsplash.jpg" alt="image">
+                        </figure>  
+                        <div class="card-title-wrapper">
+                          <h3 class="card-title">Brian Cooper</h3>
+                          <p class="card-subtitle">New York, NY</p>
+                        </div>
+                        <ul class="list list-card-icon">
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                        </ul>
+                      </div>
+                      <div class="card-middle">
+                        <p class="card-description">It was the most exciting excursion in my life I’m so grateful to the North for their service and professionalism! Thanks!</p>
+                      </div>
+                      <div class="card-bottom">
+                        <a class="card-link" href="#">View more</a>
+                      </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card card-review">
+                      <div class="card-top">
+                        <figure class="card-image">
+                          <img class="image" src="images/bewakoof-com-official-208003-unsplash.jpg" alt="image">
+                        </figure>  
+                        <div class="card-title-wrapper">
+                          <h3 class="card-title">Ann Baker</h3>
+                          <p class="card-subtitle">Florida, FL</p>
+                        </div>
+                        <ul class="list list-card-icon">
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                        </ul>
+                      </div>
+                      <div class="card-middle">
+                        <p class="card-description">I am completely satisfied with the service. Good agency! I’m happy right now! I highly recommend it! </p>
+                      </div>
+                      <div class="card-bottom">
+                        <a class="card-link" href="#">View more</a>
+                      </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card card-review">
+                      <div class="card-top">
+                        <figure class="card-image">
+                          <img class="image" src="images/tamara-bellis-217836-unsplash.jpg" alt="image">
+                        </figure>  
+                        <div class="card-title-wrapper">
+                          <h3 class="card-title">Jane Carter</h3>
+                          <p class="card-subtitle">New Jersey, NJ</p>
+                        </div>
+                        <ul class="list list-card-icon">
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                          <li class="list-item icon-star-full"></li>
+                        </ul>
+                      </div>
+                      <div class="card-middle">
+                        <p class="card-description">Cool service! Cool people! Cool animals and nature? it was the best time ever! I recommend it!</p>
+                      </div>
+                      <div class="card-bottom">
+                        <a class="card-link" href="#">View more</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="swiper-button-prev">&lt;</div>
+              <div class="swiper-button-next">&gt;</div>
+            
+            </div>
+
+        </section>
+      </main>
+
+      <footer class="footer section section-footer">
+
+        <figure class="section-background">
+          <img src="images/erik-ringsmuth-1357014-unsplash.jpg" alt="image">
+        </figure>
+  
+        <div class="section-overlay"></div>
+
+        <div class="container">
+          <div class="footer-top">
+            <h3 class="section-title">Subscribe to our newsletter</h3>
+          </div>
+          <div class="footer-middle">
+              <form class="form-subscribe">
+              <div class="form-group">
+                <label class="form-label" for="exampleInputEmail1">Enter your email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Example@gmail.com">
+              </div>
+              <button type="submit" class="button button-primary button-md">Subscribe</button>
+            </form>
+          </div>
+          <div class="footer-bottom">
+            <div class="grid">
+              <div class="grid-item width-1-2 width-1-3-md">
+                <div class="footer-bottom-start">
+                  <h4 class="section-subtitle">Contacts</h4>
+                  <ul class="list list-contacts font-size14">
+                    <li class="list-item">
+                      <span class="list-icon icon-location"></span>
+                      438 Example Street, San Francisco, CA 94528, USA
+                    </li>
+                    <li class="list-item">
+                      <span class="list-icon icon-phone"></span>  
+                      +47-124-82-232
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="grid-item width-1-2 width-1-3-md">
+                <div class="footer-bottom-center">
+                  <h4 class="section-subtitle">Socials</h4>
+                  <ul class="list list-socials">
+                    <li class="list-item icon-instagram"></li>
+                    <li class="list-item icon-twitter-logo-button"></li>
+                    <li class="list-item icon-facebook"></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="grid-item width-1-1 width-1-3-md">
+                <div class="footer-bottom-end">
+                  <a class="logo" href="#">The North.</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  
+    <script src="js/swiper.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
