@@ -60,7 +60,6 @@ margin-bottom: 20px;
 
 .card-populartours {
   margin-bottom: 40px;
-  max-width: 258px;
 }
 
 .card-populartours .card-title, 
@@ -185,4 +184,11 @@ max-height: 171px;
 
 .card-review .image {
   border-radius: 50%;
+}
+
+@media ( min-width: 480px ) {
+  .card-populartours {
+    max-width: 258px;
+  }
+  
 }

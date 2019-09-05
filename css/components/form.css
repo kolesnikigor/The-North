@@ -17,6 +17,16 @@
   height: 52px;
   border: none;
   padding: 0 21px;
+  outline: none;
+}
+
+.form-control {
+  background: #F2F7FF;
+  border-radius: 133px;
+  width: 272px;
+  height: 52px;
+  border: none;
+  padding: 0 21px;
 }
 
 .form-label {

@@ -20,7 +20,8 @@
   border: none;
   cursor: pointer;
   border-radius: 133px;
-  width: 100%;
+  height: 52px;
+  padding: 0 40px;
 }
 
 .dropbtn:hover, .dropbtn:focus {
@@ -31,8 +32,7 @@
   float: right;
   position: relative;
   display: inline-block;
-  margin-top: -50px;
-  width: 100%;
+  margin-top: -60px;
 }
 
 .dropdown-profile {
@@ -48,9 +48,8 @@
   background-color: #f1f1f1;
   min-width: 160px;
   overflow: auto;
-  right: 0;
   z-index: 1;
-  width: 100%;
+  right: 0;
 }
 
 .dropdown-content a {
@@ -63,6 +62,33 @@
 .dropdown a:hover {background-color: #ddd;}
 
 .show {display: block;}
+
+.nav-button-decoration::after, .nav-button-decoration::before, .nav-button-decoration {
+  position: absolute;
+  top: 55%;
+  margin-top: -2px;
+  margin-left: -18.5px;
+  width: 37px;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.nav-button-decoration::before, .nav-button-decoration::after {
+  display: inline-block;
+  content: '';
+}
+
+.nav-button-decoration::after {
+  -webkit-transform: translateY(9px);
+  -ms-transform: translateY(9px);
+  transform: translateY(9px);
+}
+
+.nav-button-decoration::before {
+  -webkit-transform: translateY(-9px);
+  -ms-transform: translateY(-9px);
+  transform: translateY(-9px);
+}
 
 @media ( min-width: 640px) {
   .dropdown {
